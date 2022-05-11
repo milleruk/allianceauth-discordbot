@@ -66,4 +66,4 @@ class Kinsy(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(Auth(bot))
+    bot.add_cog(Kinsy(bot))
