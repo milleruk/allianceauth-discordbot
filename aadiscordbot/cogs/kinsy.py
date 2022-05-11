@@ -21,7 +21,7 @@ class Kinsy(commands.Cog):
         self.bot = bot
 
     @commands.command(pass_context=True)
-    async def auth(self, ctx):
+    async def kinsy(self, ctx):
         """
         Returns the Kinsy Video
         """
@@ -43,8 +43,8 @@ class Kinsy(commands.Cog):
 
         return await ctx.send(embed=embed)
 
-    @commands.slash_command(name='auth', guild_ids=[int(settings.DISCORD_GUILD_ID)])
-    async def auth_slash(self, ctx):
+    @commands.slash_command(name='kinsy', guild_ids=[int(settings.DISCORD_GUILD_ID)])
+    async def kinsy_slash(self, ctx):
         """
         Returns the Kinsy Video
         """
