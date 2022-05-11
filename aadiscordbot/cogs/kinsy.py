@@ -27,13 +27,13 @@ class Kinsy(commands.Cog):
         """
         await ctx.trigger_typing()
 
-        embed = Embed(title="AllianceAuth")
+        embed = Embed(title="JUST JUMP IN!!")
         embed.set_thumbnail(
             url="https://images.evetech.net/characters/1630472146/portrait?size=128"
         )
         embed.colour = Color.blue()
 
-        embed.description = "Just Jump In Anw WARP TO ME!!"
+        embed.description = "Just Jump In And WARP TO ME!!"
 
         url = get_site_url()
 
@@ -43,7 +43,7 @@ class Kinsy(commands.Cog):
 
         return await ctx.send(embed=embed)
 
-    @commands.slash_command(name='kinsy', guild_ids=[int(settings.DISCORD_GUILD_ID)])
+    @commands.slash_command(name='kinsy')
     async def kinsy_slash(self, ctx):
         """
         Returns the Kinsy Video
@@ -54,7 +54,7 @@ class Kinsy(commands.Cog):
         )
         embed.colour = Color.blue()
 
-        embed.description = "Just Jump In Anw WARP TO ME!!"
+        embed.description = "Just Jump In And WARP TO ME!!"
 
         url = get_site_url()
 
